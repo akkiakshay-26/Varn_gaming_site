@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom CSS for the Sudoku game */
+.sudoku-board {
+  min-height: 22.75rem;
+  margin-top: 3px;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  border: 2px solid #808080;
+}
+.sudoku-board-cell {
+  position: relative;
+  border: 1px solid #ddd;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+}
+.sudoku-board-cell:nth-of-type(9n+1) { border-left-width: 2px; border-left-color: #808080; }
+.sudoku-board-cell:nth-of-type(n):nth-of-type(-n+9) { border-top-width: 2px; border-top-color: #808080; }
+.sudoku-board-cell:nth-of-type(3n) { border-right-width: 2px; border-right-color: #808080; }
+.sudoku-board-cell:nth-of-type(n+19):nth-of-type(-n+27),
+.sudoku-board-cell:nth-of-type(n+46):nth-of-type(-n+54),
+.sudoku-board-cell:nth-of-type(n+73):nth-of-type(-n+81) { border-bottom-width: 2px; border-bottom-color: #808080; }
+.sudoku-board-cell input {
+  background: none;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: none;
+}
+.sudoku-board-cell .highlight-val { color: #00d; }
+.sudoku-board-cell .board-cell--error { background: #d00; color: #eee; }
+.sudoku-board-cell .candidates { display: none; }
+.show-candidates .candidates { display: block; }
+.sudoku-board-cell .candidates {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0.5rem;
+  opacity: 0.6;
+  padding: 2px;
+}
+.candidate--highlight { background-color: yellow; }
+.candidate--to-remove { background-color: red; color: white; }
+
+/* Custom CSS for the Tetris game */
+#game-area-canvas {
+  background-color: #31393c;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.game-buttons button {
+  @apply rounded-full px-6 py-2 m-2 text-white font-bold transition-all duration-300 transform hover:scale-105 shadow-md;
+}
+.game-buttons .bg-blue-500:hover { background-color: #3b82f6; }
+.game-buttons .bg-green-500:hover { background-color: #22c55e; }
+.game-buttons .bg-purple-500:hover { background-color: #a855f7; }
+.game-buttons .bg-red-500:hover { background-color: #ef4444; }
+
+/* A simple scroll-to-top button for good UX */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+#scrollToTopBtn.show {
+  opacity: 1;
+}
+
+/* Basic modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  @apply bg-gray-800 p-8 rounded-xl shadow-2xl max-w-lg w-11/12 text-center text-white;
+}
+
+/* Smooth page transition effect */
+.page {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

@@ -1,0 +1,81 @@
+---
+---
+<!-- Chatbot Modal -->
+<div id="chatbotModal" class="modal">
+    <div class="modal-content relative max-w-lg mx-auto p-6 rounded-xl shadow-2xl bg-gray-800">
+        <span class="close-btn absolute top-4 right-4 text-gray-400 hover:text-white text-3xl cursor-pointer">&times;</span>
+        <h3 class="text-xl font-bold text-white mb-4">VARN Support Chatbot</h3>
+        <div id="chat-container" class="bg-gray-900 p-4 rounded-lg h-96 overflow-y-auto mb-4 border border-gray-700">
+            <div class="flex justify-start mb-2">
+                <div class="bg-gray-700 text-white p-3 rounded-lg max-w-xs">
+                    Hello! How can I help you today?
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <input type="text" id="chat-input" class="flex-grow p-2 rounded-l-lg bg-gray-700 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="Type your message...">
+            <button id="send-btn" class="bg-teal-500 hover:bg-teal-600 text-white px-4 rounded-r-lg transition-colors">Send</button>
+        </div>
+        <p class="text-xs text-gray-500 mt-2">This is a simulated chatbot for demonstration purposes. It does not connect to a live service.</p>
+    </div>
+</div>
+
+<!-- Floating Chatbot Button -->
+<button id="chatbotBtn" class="fixed bottom-4 right-4 z-[1001] bg-teal-500 text-white p-4 rounded-full shadow-lg hover:bg-teal-600 transition-colors duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.766L11.082 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-2 11h-4v-2h4v2zm0-4h-7v-2h7v2z"/>
+    </svg>
+</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const chatbotModal = document.getElementById('chatbotModal');
+        const openChatbotBtn = document.getElementById('chatbotBtn');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+        const chatContainer = document.getElementById('chat-container');
+
+        document.querySelectorAll('.modal .close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modal = btn.closest('.modal');
+                if (modal instanceof HTMLElement) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+        if (openChatbotBtn) {
+            openChatbotBtn.addEventListener('click', () => {
+                if (chatbotModal instanceof HTMLElement) {
+                    chatbotModal.style.display = 'flex';
+                }
+            });
+        }
+
+        if (sendBtn && chatInput && chatContainer) {
+            sendBtn.addEventListener('click', () => {
+                if (chatInput instanceof HTMLInputElement) {
+                    const message = chatInput.value.trim();
+                    if (message === '') return;
+                    
+                    // User message
+                    const userMessageDiv = document.createElement('div');
+                    userMessageDiv.className = 'flex justify-end mb-2';
+                    userMessageDiv.innerHTML = `<div class="bg-blue-600 text-white p-3 rounded-lg max-w-xs">${message}</div>`;
+                    chatContainer.appendChild(userMessageDiv);
+                    chatInput.value = '';
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+
+                    // Simulated bot response
+                    setTimeout(() => {
+                        const botResponseDiv = document.createElement('div');
+                        botResponseDiv.className = 'flex justify-start mb-2';
+                        botResponseDiv.innerHTML = `<div class="bg-gray-700 text-white p-3 rounded-lg max-w-xs">I am a prototype chatbot. How can I assist you with the VARN Gaming website?</div>`;
+                        chatContainer.appendChild(botResponseDiv);
+                        chatContainer.scrollTop = chatContainer.scrollHeight;
+                    }, 1000);
+                }
+            });
+        }
+    });
+</script>

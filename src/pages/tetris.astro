@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { initTetrisGame } from '../js/tetris.js';
+---
+<Layout title="Tetris | VARN Gaming">
+  <button class="back-btn mb-6 text-gray-400 hover:text-white transition-colors" onclick="history.back()"> Back to Games</button>
+  <div class="bg-gray-800 rounded-xl shadow-xl border border-gray-700 p-8 flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+      <div class="w-full md:w-3/5">
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-inner-xl p-2">
+              <canvas id="game-area-canvas" class="w-full h-[500px]"></canvas>
+          </div>
+      </div>
+      <div class="w-full md:w-2/5 flex flex-col items-center md:items-start mt-8 md:mt-0">
+          <h3 class="text-4xl font-bold text-teal-400 mb-4">Tetris</h3>
+          <p class="text-gray-400 text-center md:text-left mb-6">A timeless puzzle game where you arrange falling blocks to form complete lines and clear them from the board.</p>
+          <div class="text-center md:text-left">
+              <div class="text-sm text-gray-500 uppercase font-semibold">Next</div>
+              <div id="next" class="bg-gray-900 rounded-lg p-2 mt-2 w-24 h-24"></div>
+          </div>
+          <div class="mt-6 text-center md:text-left">
+              <div class="text-sm text-gray-500 uppercase font-semibold">Score</div>
+              <div id="score" class="text-3xl font-bold text-white mt-2">0</div>
+          </div>
+          <div class="mt-8 bg-gray-900 p-6 rounded-lg shadow-inner w-full">
+              <div class="text-gray-300 font-semibold mb-2">Controls:</div>
+              <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                  <li>**Left/Right Arrows:** Move block</li>
+                  <li>**Down Arrow:** Soft drop</li>
+                  <li>**Up Arrow:** Rotate</li>
+                  <li>**Spacebar:** Hard drop</li>
+                  <li>**R:** Reset Game</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</Layout>
+<script>
+    import { initTetrisGame } from '../js/tetris.js';
+    document.addEventListener('DOMContentLoaded', () => {
+        initTetrisGame('game-area-canvas');
+    });
+</script>

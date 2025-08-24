@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GameCard from '../components/GameCard.astro';
+---
+<Layout title="VARN Gaming Website">
+  <div class="py-20 text-center bg-gray-800 rounded-2xl shadow-xl border border-gray-700">
+    <h1 class="text-6xl font-extrabold text-white mb-4">Welcome to the Ultimate Gaming Hub!</h1>
+    <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+      Stay informed with the latest news, sharpen your skills with our guides, and connect with a vibrant community.
+    </p>
+    <div class="flex justify-center space-x-4">
+      <a href="/games" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">Explore Games</a>
+      <a href="/reviews" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">Read Reviews</a>
+    </div>
+  </div>
+
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 p-6">
+      <img src="/images/latest-game.webp" alt="Latest Game" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="text-2xl font-bold text-white mb-2">New Release: Game Title</h3>
+      <p class="text-gray-400 text-sm">Discover the latest and greatest titles shaping the industry.</p>
+    </div>
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 p-6">
+      <img src="/images/top-review.webp" alt="Top Review" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="text-2xl font-bold text-white mb-2">In-Depth Review</h3>
+      <p class="text-gray-400 text-sm">Our expert analysis on gameplay, graphics, and storyline.</p>
+    </div>
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-gray-700 p-6">
+      <img src="/images/community-spotlight.webp" alt="Community Spotlight" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="text-2xl font-bold text-white mb-2">Community Spotlight</h3>
+      <p class="text-gray-400 text-sm">Highlights from our forums and the best fan-created content.</p>
+    </div>
+  </div>
+</Layout>

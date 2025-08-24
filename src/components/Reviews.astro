@@ -1,0 +1,98 @@
+---
+---
+<!-- Reviews Section with User Submissions -->
+<section id="reviews" class="page">
+    <h2 class="text-4xl font-bold text-white text-center mb-8">Community Reviews</h2>
+    <div class="text-center mb-8">
+        <button id="submitReviewBtn" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">Submit a Review</button>
+    </div>
+    <div id="review-list" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Placeholder Review 1 -->
+        <div class="bg-gray-800 rounded-xl shadow-xl border border-gray-700 p-6">
+            <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">⭐⭐⭐⭐⭐</span>
+                <h4 class="text-white font-bold">Absolutely fantastic!</h4>
+            </div>
+            <p class="text-gray-400 italic text-sm mb-4">"The website is so easy to navigate and the game descriptions are really helpful. The Sudoku game is a great time-killer!"</p>
+            <p class="text-gray-500 text-sm">- Jane Doe</p>
+        </div>
+        <!-- Placeholder Review 2 -->
+        <div class="bg-gray-800 rounded-xl shadow-xl border border-gray-700 p-6">
+            <div class="flex items-center mb-2">
+                <span class="text-2xl mr-2">⭐⭐⭐⭐</span>
+                <h4 class="text-white font-bold">Great for passing the time</h4>
+            </div>
+            <p class="text-gray-400 italic text-sm mb-4">"I love the clean design. The Tetris game works perfectly on my phone. Looking forward to more games!"</p>
+            <p class="text-gray-500 text-sm">- John Smith</p>
+        </div>
+    </div>
+</section>
+
+<!-- Submit Review Modal -->
+<div id="reviewModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn absolute top-4 right-4 text-gray-400 hover:text-white text-3xl cursor-pointer">&times;</span>
+        <h3 class="text-2xl font-bold mb-4">Submit Your Review</h3>
+        <form id="reviewForm">
+            <div class="mb-4">
+                <label for="reviewName" class="block text-left text-gray-400 mb-2">Your Name</label>
+                <input type="text" id="reviewName" class="w-full p-2 rounded bg-gray-900 border border-gray-700 text-white" required>
+            </div>
+            <div class="mb-4">
+                <label for="reviewRating" class="block text-left text-gray-400 mb-2">Rating</label>
+                <select id="reviewRating" class="w-full p-2 rounded bg-gray-900 border border-gray-700 text-white" required>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="reviewTitle" class="block text-left text-gray-400 mb-2">Review Title</label>
+                <input type="text" id="reviewTitle" class="w-full p-2 rounded bg-gray-900 border border-gray-700 text-white" required>
+            </div>
+            <div class="mb-4">
+                <label for="reviewText" class="block text-left text-gray-400 mb-2">Your Review</label>
+                <textarea id="reviewText" rows="4" class="w-full p-2 rounded bg-gray-900 border border-gray-700 text-white" required></textarea>
+            </div>
+            <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded-full">Submit</button>
+        </form>
+    </div>
+</div>
+<script is:inline>
+    // Review modal and form logic
+    document.addEventListener('DOMContentLoaded', () => {
+        const reviewModal = document.getElementById('reviewModal');
+        const submitReviewBtn = document.getElementById('submitReviewBtn');
+        const reviewForm = document.getElementById('reviewForm');
+        
+        if (submitReviewBtn) {
+            submitReviewBtn.addEventListener('click', () => {
+                if (reviewModal) {
+                    reviewModal.style.display = 'flex';
+                }
+            });
+        }
+
+        if (reviewForm) {
+            reviewForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your review! It has been submitted for approval.');
+                if (reviewModal) {
+                    reviewModal.style.display = 'none';
+                }
+                reviewForm.reset();
+            });
+        }
+        
+        document.querySelectorAll('.modal .close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modal = btn.closest('.modal');
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>

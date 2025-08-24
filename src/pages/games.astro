@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GameCard from '../components/GameCard.astro';
+---
+<Layout title="Games | VARN Gaming">
+  <h2 class="text-4xl font-bold text-white text-center mb-8">Our Games</h2>
+  <div class="max-w-xl mx-auto mb-8">
+    <input type="text" id="game-search" placeholder="Search for games..." class="w-full bg-gray-900 border border-gray-700 rounded-full py-3 px-6 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300">
+  </div>
+  <div id="game-list" class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <GameCard
+      name="Sudoku"
+      description="A popular logic-based number puzzle game where the goal is to fill a 9x9 grid so that each row, column, and 3x3 section contains all the digits from 1 to 9."
+      image="/images/sudoku.webp"
+      targetPage="/sudoku"
+    />
+    <GameCard
+      name="Tetris"
+      description="A classic puzzle game where you strategically rotate falling tetromino blocks to clear horizontal lines and prevent the stack from reaching the top of the playing field."
+      image="/images/tetris.webp"
+      targetPage="/tetris"
+    />
+    <GameCard
+      name="Brick Breaker"
+      description="A classic arcade-style game where you control a paddle to bounce a ball and destroy a wall of bricks."
+      image="/images/brick-breaker.webp"
+    />
+    <GameCard
+      name="Tic-Tac-Toe"
+      description="The classic two-player game on a 3x3 grid. Get three of your marks in a row to win!"
+      image="/images/tic-tac-toe.webp"
+    />
+  </div>
+</Layout>
+
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+        const gameSearchInput = document.getElementById('game-search');
+        const gameListContainer = document.getElementById('game-list');
+        
+        if (gameSearchInput && gameListContainer) {
+            gameSearchInput.addEventListener('input', (e) => {
+                if (e.target instanceof HTMLInputElement) {
+                    const query = e.target.value.toLowerCase();
+                    const gameCards = gameListContainer.querySelectorAll('.game-card');
+                    gameCards.forEach(card => {
+                        // Check if the card is an HTMLElement before accessing style
+                        if (card instanceof HTMLElement) {
+                            const gameName = card.dataset.gameName.toLowerCase();
+                            if (gameName.includes(query)) {
+                                card.style.display = 'flex';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    });
+</script>
